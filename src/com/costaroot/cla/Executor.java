@@ -12,6 +12,9 @@ public class Executor {
     private void carRun(){
         Car bmw = new Car ("bmw");
         Car fiat = new Car("fiat");
+        bmw.startEngine();
+        bmw.startMove(50.5);
+        fiat.startMove(33);
         System.out.println("\nNumber produced cars are "+fiat.getCreatedCar());
     }
     public void run(){

@@ -24,7 +24,18 @@ public class Car {
             System.out.println("Engine has already started. Do not do it");
         }else {
             isEngine = true;
-            System.out.println("Engine turn on");
+            System.out.println("\nEngine turn on");
+        }
+    }
+
+    public void startMove(double speed){
+        if (isEngine && !isMove){
+            isMove = true;
+            moveSpeed = speed;
+            System.out.println(carName+" is move with speed: "+moveSpeed+" km/h");
+        }
+        else{
+            System.out.println("Engine off");
         }
     }
 
